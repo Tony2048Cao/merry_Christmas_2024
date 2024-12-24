@@ -152,13 +152,19 @@ function GreetingPage() {
         </div>
         <div className="card-inside">
           <div className="message-content">
-            <p className="dear">Dear {message?.split('，')[0].split(' ')[1]},</p>
+            <p className="dear">Dear {message?.split('Merry Christmas, ')[1]?.split('!')[0]},</p>
             <p className="greeting-message">
-              Wishing you a Christmas season filled with warmth, joy, and wonderful surprises.
-              May the magic of Christmas fill your heart with peace and happiness.
+            🎄Long time no see my dear friend! 
+              <br/>
+              😁Hope your Christmas is packed with joy, yummy food, and awesome moments with your favorite people!
+              <br/>
+              🌟May each day ahead of you be filled with joy and laughter! 
+              <br/>
+              ✨Sending you warm hugs and best wishes for this holiday! ✨
             </p>
-            <p className="signature">With Best Wishes</p>
-            <p className="date">December 25, 2023</p>
+            <p className="signature"></p>
+            <p className="from">From: Tony Cao</p>
+            <p className="date">December 25, 2024</p>
           </div>
           <button 
             onClick={() => navigate('/')} 

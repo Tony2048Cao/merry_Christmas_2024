@@ -98,17 +98,23 @@ h1 {
 
 .dear {
   font-size: 24px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   font-style: italic;
 }
 
 .greeting-message {
+  font-style: italic;
   font-size: 18px;
   line-height: 1.6;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .signature {
+  font-style: italic;
+  text-align: right;
+  margin-bottom: 10px;
+}
+.from {
   font-style: italic;
   text-align: right;
   margin-bottom: 10px;
@@ -320,6 +326,8 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: bold;
+  position: relative;
+  z-index: 1;
 }
 
 .submit-button:hover:not(:disabled) {
@@ -355,6 +363,7 @@ h1 {
   background-size: 50px 50px;
   opacity: 0.1;
   animation: snow-pattern 20s linear infinite;
+  z-index: 0;
 }
 
 @keyframes snow-pattern {
